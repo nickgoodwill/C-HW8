@@ -36,6 +36,7 @@ for (int i = 0; i < newArray.GetLength(0); i++)
         for (int j = 0; j < newArray.GetLength(1); j++)
             temp[j] = newArray[i, j];
         Array.Sort(temp);
+        Array.Reverse(temp);
         for (int k = 0; k < newArray.GetLength(0); k++)
             {
                 newArray[i, k] = temp[k];
@@ -52,3 +53,5 @@ PrintArray(matr);
 int [,] newArray = matr;
 
 rotation(newArray);
+
+
